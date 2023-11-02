@@ -1,3 +1,4 @@
-# DES222-Task1
+# DES222 Task3
 
-For some reason (maybe how em works?) there are differences between the local version of the webpage and the version on github pages. The font size is smaller and the images line up correctly in the local version.
+idk what were calling the project so i just put it as name? on the website gotta remember to change that
+also the videos need to be changed when we film the actual ones cant forgor this either

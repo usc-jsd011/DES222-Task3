@@ -1,0 +1,119 @@
+:root {
+    --white-font: #FFFFFF;
+    --black-font: #000000;
+    --blue-font: #5BAAEC;
+    --background-color: #33425B;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+.card-image {
+    max-width: 100%;
+}
+
+.card-blurb {
+    max-width: 100%;
+}
+
+.half-card-image {
+    max-width: 100%;
+}
+
+.main-container {
+    font-family: Inter;
+    display: grid;
+    column-gap: 1em;
+    row-gap: 1em;
+    color: var(--white-font);
+    background-color: var(--background-color);
+    justify-content: center;
+    text-align: center;
+
+    grid-template: 
+        "ban"
+        "c1"
+        "c2"
+        "c3"
+        "c4"
+        "c5"
+        "c6"
+        "c7"
+        "c8"
+    ;
+}
+
+@media (min-width: 50em) {
+    .main-container {
+        grid-template: 
+            "ban ban"
+            "c1 c2"
+            "c3 c4"
+            "c5 c6"
+            "c7 c8"
+        ;
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 75em) {
+    .main-container {
+        grid-template:
+            "ban ban ban ban"
+            "c1 c2 c3 c4"
+            "c5 c6 c7 c8"
+        ;
+
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+#banner {
+    grid-area: ban;
+    color: var(--blue-font);
+    font-size: 2em;
+}
+
+#card1 {
+    grid-area: c1;
+}
+
+#card2 {
+    grid-area: c2;
+}
+
+#card3 {
+    grid-area: c3;
+}
+
+#card4 {
+    grid-area: c4;
+}
+
+#card5 {
+    grid-area: c5;
+}
+
+#card6 {
+    grid-area: c6;
+}
+
+#card7 {
+    grid-area: c7;
+    font-size: 2em;
+    color: var(--blue-font);
+    justify-content: center;
+}
+
+#card8 {
+    grid-area: c8;
+    color: var(--blue-font);
+}

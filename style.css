@@ -39,14 +39,9 @@ body {
 
     grid-template: 
         "ban"
+        "sub"
         "c1"
         "c2"
-        "c3"
-        "c4"
-        "c5"
-        "c6"
-        "c7"
-        "c8"
     ;
 }
 
@@ -54,25 +49,11 @@ body {
     .main-container {
         grid-template: 
             "ban ban"
+            "sub sub"
             "c1 c2"
-            "c3 c4"
-            "c5 c6"
-            "c7 c8"
         ;
 
         grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 75em) {
-    .main-container {
-        grid-template:
-            "ban ban ban ban"
-            "c1 c2 c3 c4"
-            "c5 c6 c7 c8"
-        ;
-
-        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -82,38 +63,15 @@ body {
     font-size: 2em;
 }
 
+#subtitle {
+    grid-area: sub;
+    color: var(--blue-font);
+}
+
 #card1 {
     grid-area: c1;
 }
 
 #card2 {
     grid-area: c2;
-}
-
-#card3 {
-    grid-area: c3;
-}
-
-#card4 {
-    grid-area: c4;
-}
-
-#card5 {
-    grid-area: c5;
-}
-
-#card6 {
-    grid-area: c6;
-}
-
-#card7 {
-    grid-area: c7;
-    font-size: 2em;
-    color: var(--blue-font);
-    justify-content: center;
-}
-
-#card8 {
-    grid-area: c8;
-    color: var(--blue-font);
 }
